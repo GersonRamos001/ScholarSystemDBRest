@@ -1,8 +1,7 @@
 package com.ra.unisystem;
 
-import com.ra.unisystem.modelo.Carrera;
 import com.ra.unisystem.servicio.CarreraServicio;
-import com.ra.unisystem.views.repositorio.MateriaCarreraViewRepositorio;
+import com.ra.unisystem.views.repositorio.CarreraPorFacultadViewRepositorio;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -12,12 +11,12 @@ public class UniSystemApplication  implements CommandLineRunner {
 
     private final CarreraServicio carreraServicio;
 
-    public UniSystemApplication(CarreraServicio carreraServicio, MateriaCarreraViewRepositorio materiaCarreraViewRepositorio) {
+    public UniSystemApplication(CarreraServicio carreraServicio, CarreraPorFacultadViewRepositorio carreraPorFacultadViewRepositorio) {
         this.carreraServicio = carreraServicio;
-        this.materiaCarreraViewRepositorio = materiaCarreraViewRepositorio;
+        this.carreraPorFacultadViewRepositorio = carreraPorFacultadViewRepositorio;
     }
 
-    private final MateriaCarreraViewRepositorio materiaCarreraViewRepositorio;
+    private final CarreraPorFacultadViewRepositorio carreraPorFacultadViewRepositorio;
 
 
     public static void main(String[] args) {

@@ -6,7 +6,7 @@ import org.hibernate.annotations.Immutable;
 @Entity
 @Table(name="vista_carreras_por_facultades")
 @Immutable
-public class MateriasCarreraView {
+public class CarreraPorFacultadView {
 
 
 
@@ -15,7 +15,7 @@ public class MateriasCarreraView {
     @Id
     private String nombre_carrera;
 
-    public MateriasCarreraView() {}
+    public CarreraPorFacultadView() {}
 
 
 
