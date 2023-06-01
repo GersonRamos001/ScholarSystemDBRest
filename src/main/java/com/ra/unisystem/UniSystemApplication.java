@@ -2,12 +2,10 @@ package com.ra.unisystem;
 
 import com.ra.unisystem.modelo.Carrera;
 import com.ra.unisystem.servicio.CarreraServicio;
-import com.ra.unisystem.views.MateriaCarreraViewRepositorio;
+import com.ra.unisystem.views.repositorio.MateriaCarreraViewRepositorio;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-
-import java.util.List;
 
 @SpringBootApplication
 public class UniSystemApplication  implements CommandLineRunner {
@@ -28,11 +26,5 @@ public class UniSystemApplication  implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        Carrera carrera = new Carrera();
-        carrera.setNombre("Licenciatura en Comunicaciones");
-        carrera.setIdfacultad(3L);
-        carreraServicio.saveCarrera(carrera);
-
-
     }
 }

@@ -1,4 +1,4 @@
-package com.ra.unisystem.views;
+package com.ra.unisystem.views.modelo;
 
 import jakarta.persistence.*;
 import org.hibernate.annotations.Immutable;
